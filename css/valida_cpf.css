@@ -1,0 +1,50 @@
+/*
+* Descrição: CSS do validar de cpf
+* Palavras-chave: CSS
+* Autor: André Liro
+* Email: andreliro1945@gmail.com
+* WhatsApp: (74)99114-9116
+* Data de Criação: 23:58 02/09/2017
+*/
+
+#snackbar {
+    position: absolute;
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    opacity: 0.7;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {opacity: 0.7;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {opacity: 0.7;}
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 0.7;}
+    to {left: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {opacity: 0.7;}
+    to {left: 0; opacity: 0;}
+}
